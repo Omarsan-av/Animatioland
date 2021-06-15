@@ -201,7 +201,7 @@ input:checked
    left: 0;
    right: 0;
    margin: 0 auto;
-   width: 240rem;
+   width: 75%;
    height: 400rem;
    background: #c66645;
    bottom: 0;
@@ -264,7 +264,7 @@ input:checked
    position: absolute;
    z-index: 5;
    left: 0;
-   width: 210rem;
+   width: 65%;
    height: 280rem;
    background: #c66645;
    bottom: 0;
@@ -328,7 +328,7 @@ input:checked
    z-index: 7;
    right: 0;
    margin: 0 auto;
-   width: 160rem;
+   width: 55%;
    height: 160rem;
    background: #c66645;
    bottom: 0;
@@ -392,7 +392,7 @@ input:checked
    z-index: 9;
    left: 0;
    margin: 0 auto;
-   width: 180rem;
+   width: 60%;
    height: 60rem;
    background: #c66645;
    bottom: 0;
