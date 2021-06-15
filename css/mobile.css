@@ -717,8 +717,8 @@ input:checked
    background: white;
    position: absolute;
    border-radius: 50%;
-   border-bottom-right-radius: 20%;
-   border-bottom-left-radius: 20%;
+   border-bottom-right-radius: 12%;
+   border-bottom-left-radius: 12%;
    overflow: hidden;
 }
 
