@@ -165,7 +165,7 @@ input:checked
    left: 60rem;
 
    animation-name: jump2;
-   animation-duration: 1.8s;
+   animation-duration: 2s;
    animation-timing-function: ease;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -175,22 +175,22 @@ input:checked
 {
    0% 
    {
-      transform: translateY(65rem);
+      transform: translateY(15rem);
    }
 
    50% 
    {
-      transform: translateY(35rem);
+      transform: translateY(65rem);
    }
 
    75% 
    {
-      transform: translateY(0rem);
-   } 
+      transform: translateY(10rem);
+   }  
 
    100% 
    {
-      transform: translateY(40rem);
+      transform: translateY(50rem);
    }
 }
 
@@ -231,7 +231,7 @@ input:checked
    left: 60rem;
 
    animation-name: jump4;
-   animation-duration: 2s;
+   animation-duration: 1.5s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -246,13 +246,13 @@ input:checked
 
    50% 
    {
-      transform: translateY(100rem);
+      transform: translateY(50rem);
    }
 
-   75% 
+   /* 75% 
    {
-      transform: translateY(50rem);
-   } 
+      transform: translateY(100rem);
+   }  */
 
    100% 
    {
@@ -716,7 +716,9 @@ input:checked
    top: 64rem;
    background: white;
    position: absolute;
-   border-radius: 44%;
+   border-radius: 50%;
+   border-bottom-right-radius: 20%;
+   border-bottom-left-radius: 20%;
    overflow: hidden;
 }
 
