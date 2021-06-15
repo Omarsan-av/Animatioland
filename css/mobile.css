@@ -1,0 +1,754 @@
+html 
+{
+   font-size: 6.25%;
+}
+
+body 
+{
+   margin: 0;
+   height: 100vh; 
+   width: 100%;
+   display: grid;
+   place-items: center;
+}
+
+.phone
+{
+   position: relative;
+   border: none;
+   border-radius: 0;
+   width: 100vw;
+   height: 100vh;
+   background: #2c3e50;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to left, #3498db, #dde8f3 95%);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to left, #3498db, #dde8f3 95%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   overflow: hidden;
+   box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
+}
+
+.sun 
+{
+   width: 90rem;
+   height: 90rem;
+   background: #e4d13a;
+   border-radius: 50%;
+   position: absolute;
+   left: -31rem;
+   top: -8rem;
+}
+
+.cloud 
+{
+   width: 130rem;
+   position: absolute;
+   right: 0;
+   top: 25rem;
+}
+
+.cloud img
+{
+   width: 100%;
+}
+
+input[type=checkbox] 
+{
+   appearance: none;
+   cursor: pointer;
+   position: relative;
+   width: 80rem;
+   height: 130rem;
+   top: 0;
+   z-index: 2;
+
+}
+
+input[type=checkbox]:focus 
+{
+   appearance: none;
+   outline: none;    
+}
+
+input:checked 
+{
+   counter-increment: game;
+}
+
+.score 
+{
+   position: absolute;
+   letter-spacing: 2.5rem;
+   top: 65rem;
+   left: 110rem;
+}
+
+.score:after 
+{
+   content: counter(game);
+}
+
+.hands-1
+{
+   position: absolute;
+   z-index: 1;
+   height: 476rem;
+   width: 87rem;
+   bottom: 0;
+   right: 60rem;
+}
+
+.layer-1
+{
+   position: absolute;
+   z-index: 1;
+   height: 476rem;
+   width: 87rem;
+   bottom: 0;
+   right: 60rem;
+
+   animation-name: jump1;
+   animation-duration: 1.8s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes jump1 
+{
+   0% 
+   {
+      transform: translateY(15rem);
+   }
+
+   25% 
+   {
+      transform: translateY(65rem);
+   }
+
+   50% 
+   {
+      transform: translateY(10rem);
+   }
+
+   75% 
+   {
+      transform: translateY(30rem);
+   }
+
+   100% 
+   {
+      transform: translateY(0);
+   }
+}
+
+.layer-1 input[type=checkbox]
+{
+
+}
+
+.hands-2
+{
+   position: absolute;
+   z-index: 2;
+   height: 476rem;
+   width: 87rem;
+   bottom: 0;
+   left: 60rem;
+}
+
+.layer-2
+{
+   position: absolute;
+   z-index: 2;
+   height: 476rem;
+   width: 87rem;
+   bottom: 0;
+   left: 60rem;
+
+   animation-name: jump2;
+   animation-duration: 1.8s;
+   animation-timing-function: ease;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes jump2
+{
+   0% 
+   {
+      transform: translateY(65rem);
+   }
+
+   50% 
+   {
+      transform: translateY(35rem);
+   }
+
+   75% 
+   {
+      transform: translateY(0rem);
+   } 
+
+   100% 
+   {
+      transform: translateY(40rem);
+   }
+}
+
+.layer-3
+{
+   position: absolute;
+   z-index: 3;
+   left: 0;
+   right: 0;
+   margin: 0 auto;
+   width: 240rem;
+   height: 400rem;
+   background: #c66645;
+   bottom: 0;
+   border-top-right-radius: 20rem;
+   border-top-left-radius: 20rem;
+   box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
+}
+
+.hands-4
+{
+   position: absolute;
+   z-index: 4;
+   height: 356rem;
+   width: 87rem;
+   bottom: 0;
+   left: 60rem;
+}
+
+.layer-4
+{
+   position: absolute;
+   z-index: 4;
+   height: 356rem;
+   width: 87rem;
+   bottom: 0;
+   left: 60rem;
+
+   animation-name: jump4;
+   animation-duration: 1.7s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes jump4
+{
+   0% 
+   {
+      transform: translateY(10rem);
+   }
+
+   50% 
+   {
+      transform: translateY(60rem);
+   }
+
+   75% 
+   {
+      transform: translateY(20rem);
+   } 
+
+   100% 
+   {
+      transform: translateY(60rem);
+   }
+}
+
+.layer-5
+{
+   position: absolute;
+   z-index: 5;
+   left: 0;
+   width: 210rem;
+   height: 280rem;
+   background: #c66645;
+   bottom: 0;
+   border-top-right-radius: 20rem;
+   border-top-left-radius: 20rem;
+   box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
+}
+
+.hands-6
+{
+   position: absolute;
+   z-index: 6;
+   height: 236rem;
+   width: 87rem;
+   bottom: 0;
+   right: 37rem;
+}
+
+.layer-6
+{
+   position: absolute;
+   z-index: 6;
+   height: 236rem;
+   width: 87rem;
+   bottom: 0;
+   right: 37rem;
+
+   animation-name: jump6;
+   animation-duration: 1.8s;
+   animation-timing-function: ease-in-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes jump6
+{
+   0% 
+   {
+      transform: translateY(5rem);
+   }
+
+   50% 
+   {
+      transform: translateY(65rem);
+   }
+
+   75% 
+   {
+      transform: translateY(20rem);
+   } 
+
+   100% 
+   {
+      transform: translateY(50rem);
+   }
+}
+
+.layer-7
+{
+   position: absolute;
+   z-index: 7;
+   right: 0;
+   margin: 0 auto;
+   width: 160rem;
+   height: 160rem;
+   background: #c66645;
+   bottom: 0;
+   border-top-right-radius: 20rem;
+   border-top-left-radius: 20rem;
+   box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
+}
+
+.hands-8 
+{
+   position: absolute;
+   z-index: 8;
+   height: 126rem;
+   width: 87rem;
+   bottom: 10rem;
+   left: 45rem;
+}
+
+.layer-8
+{
+   position: absolute;
+   z-index: 8;
+   height: 126rem;
+   width: 87rem;
+   bottom: 10rem;
+   left: 45rem;
+
+   animation-name: jump8;
+   animation-duration: 1.5s;
+   animation-timing-function:ease-out;
+   animation-iteration-count: infinite;
+   animation-direction: alternate;
+}
+
+@keyframes jump8
+{
+   0% 
+   {
+      transform: translateY(25rem);
+   }
+
+   50% 
+   {
+      transform: translateY(65rem);
+   }
+
+   75% 
+   {
+      transform: translateY(10rem);
+   } 
+
+   100% 
+   {
+      transform: translateY(40rem);
+   }
+}
+
+.layer-9
+{
+   position: absolute;
+   z-index: 9;
+   left: 0;
+   margin: 0 auto;
+   width: 180rem;
+   height: 60rem;
+   background: #c66645;
+   bottom: 0;
+   border-top-right-radius: 20rem;
+   border-top-left-radius: 20rem;
+   box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
+}
+
+.layer-3::after,
+.layer-5::after,
+.layer-7::after, 
+.layer-9::after
+{
+   content: "";
+   position: absolute; 
+   width: 100%;
+   height: 40rem;
+   background: linear-gradient(135deg, #49ad6a 25%, transparent 25%) -50rem 0,
+               linear-gradient(-135deg, #49ad6a 25%, transparent 25%) -50rem 0,
+               linear-gradient(45deg, #49ad6a 25%, transparent 25%),
+               linear-gradient(-45deg, #49ad6a 25%, transparent 25%);
+   background-size: 25rem 100rem;
+   border-top-right-radius: 20rem;
+   border-top-left-radius: 20rem;
+}
+
+.layer-3::before,
+.layer-5::before,
+.layer-7::before, 
+.layer-9::before
+{
+   content: "";
+   position: absolute; 
+   top: 15rem;
+   width: 100%;
+   height: 40rem;
+   background: linear-gradient(135deg, #a6543d 25%, transparent 25%) -50rem 0,
+               linear-gradient(-135deg, #a6543d 25%, transparent 25%) -50rem 0,
+               linear-gradient(45deg, #a6543d 25%, transparent 25%),
+               linear-gradient(-45deg, #a6543d 25%, transparent 25%);
+   background-size: 25rem 95rem;
+   background-position: 140rem 0 0 30rem 0;
+}    
+      
+.rabbit 
+{
+   width: 578rem;
+   height: 545rem; 
+   display: flex;
+   position: absolute;
+   transform: scale(0.12);
+   left: -245rem;
+   top: -228rem;
+}
+
+.rabbit_head 
+{
+   position: absolute;
+   bottom: 0;
+   left: 142rem;
+}
+
+.left-ear--outer 
+{
+   background: white;
+   border-radius: 90%;
+   width: 115rem;
+   height: 360rem;
+   position: absolute;
+   left: -4rem;
+   top: -44%;
+   transform: rotate(-25deg);
+   border: 2rem solid #6f6c6c;
+   box-sizing: border-box;
+}
+
+.right-ear--outer 
+{
+   background: white;
+   border-radius: 90%;
+   width: 115rem;
+   height: 360rem;
+   position: absolute;
+   right: -4rem;
+   top: -44%;
+   transform: rotate(25deg);
+   border: 2rem solid #6f6c6c;
+   box-sizing: border-box;
+}
+
+.left-ear--inner 
+{
+   background: pink;
+   border-radius: 50%;
+   width: 50rem;
+   height: 260rem;
+   position: absolute;
+   left: 19rem;
+   top: -36%;
+   transform: rotate(-25deg);
+   box-sizing: border-box;
+   border: 2rem solid #6f6c6c;
+}
+
+.right-ear--inner 
+{
+   background: pink;
+   border-radius: 50%;
+   width: 50rem;
+   height: 260rem;
+   position: absolute;
+   right: 19rem;
+   top: -36%;
+   transform: rotate(25deg);
+   box-sizing: border-box;
+   border: 2rem solid #6f6c6c;
+}
+
+.head 
+{
+   width: 290rem;
+   height: 380rem;
+   background-color: white;
+   -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+   position: relative;
+   border: 2rem solid #6f6c6c;
+}
+
+.oval 
+{
+   width: 324rem;
+   height: 259rem;
+   border-radius: 50%;
+   background: white;
+   position: absolute;
+   top: 33%;
+   right: -6%;
+}
+
+.head__eye 
+{
+   width: 57rem;
+   height: 75rem;
+   border-radius: 50%;
+   background: white;
+   top: 130rem;
+   position: absolute;
+   box-sizing: border-box;
+   border: 2rem solid gray;
+}
+
+.head__eye.head__eye--left 
+{
+   left: 63rem;
+}
+
+.head__eye.head__eye--right 
+{
+   right: 63rem;
+}
+
+.pupil 
+{
+   width: 45rem;
+   height: 60rem;
+   background: linear-gradient(to bottom, #0b0044, #00d1eb);
+   border-radius: 50%;
+   position: absolute;
+   top: 11rem;
+   left: 4rem;
+   border-bottom-right-radius: 45%;
+}
+
+.pupil--black 
+{
+   width: 35rem;
+   height: 40rem;
+   background: black;
+   border-radius: 50%;
+   position: absolute;
+   top: 12rem;
+   left: 5rem;
+}
+
+.pupil--white 
+{
+   width: 10.5rem;
+   height: 13rem;
+   border-radius: 50%;
+   background: white;
+   position: absolute;
+   left: 8rem;
+   top: 3rem;
+   box-sizing: border-box;
+   border: 2rem solid #c5c5c5;
+}
+
+.nourse 
+{
+   position: relative;
+   width: 35rem;
+   height: 35rem;
+   -webkit-transform: rotate(45deg);
+   -moz-transform: rotate(45deg);
+   -ms-transform: rotate(45deg);
+   -o-transform: rotate(45deg);
+   transform: rotate(45deg);
+   background-color: #a22929;
+   border-bottom-right-radius: 80%;
+   top: 245rem;
+   left: 128rem;
+   z-index: 2;
+}
+
+.nourse:before,
+.nourse:after 
+{
+   position: absolute;
+   width: 50rem;
+   height: 50rem;
+   content: '';
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -o-border-radius: 50%;
+   border-radius: 50%;
+   background-color: #a22929;
+}
+
+.nourse:before 
+{
+   bottom: 0;
+   left: -30rem;
+   border-top-left-radius: 70%;
+}
+
+.nourse:after 
+{
+   top: -30rem;
+   right: 0;
+   border-top-left-radius: 70%;
+}
+
+.mouth 
+{
+   width: 80rem;
+   height: 60rem;
+   border: 4rem solid black;
+   border-radius: 50%;
+   position: absolute;
+   top: 245rem;
+   z-index: 1;
+}
+
+.mouth.left 
+{
+   left: 61.5rem;
+   border-top: none;
+   border-left: none;
+}
+
+.mouth.right 
+{
+   right: 61.5rem;
+   border-top: none;
+   border-right: none;
+}
+
+.mustache 
+{
+   width: 200rem;
+   height: 100rem;
+   border: solid 3.5rem;
+   border-color: #655f5f transparent transparent transparent;
+   border-radius: 50%/20rem 100rem 0 0;
+   position: absolute;
+   z-index: 2;
+}
+
+.mustache.right--top 
+{
+   top: 200rem;
+   left: 192rem;
+   border-radius: 50%/50rem 65rem 0 0;
+   transform: skewY(-5deg) rotateY(180deg);
+}
+
+.mustache.right--bottom 
+{
+   width: 190rem;
+   top: 255rem;
+   left: 192rem;
+   border-radius: 50%/20rem 70rem 0rem 0rem;
+   transform: skewY(20deg) rotateY(180deg);
+}
+
+.mustache.left--top 
+{
+   top: 200rem;
+   left: -110rem;
+   border-radius: 50%/50rem 65rem 0 0;
+   transform: skewY(5deg);
+}
+
+.mustache.left--bottom 
+{
+   width: 190rem;
+   top: 255rem;
+   left: -97rem;
+   border-radius: 50%/25rem 70rem 0rem 0rem;
+   transform: skewY(-20deg);
+}
+
+.hand 
+{
+   width: 19.5rem;
+   height: 13rem;
+   top: 65rem;
+   background: white;
+   position: absolute;
+   border-radius: 50%;
+   overflow: hidden;
+}
+
+.hand.left 
+{
+   left: 0;
+}
+
+.hand.right 
+{
+   right: 0;
+}
+
+.finger 
+{
+   width: 10.5rem;
+   height: 14.24rem;
+   background: white;
+   border-radius: 50%;
+   border: none;
+   border-right: 1.5rem solid #8c8989;
+   position: absolute;
+}
+
+.finger.left 
+{
+   top: 4rem;
+   left: -6rem;
+   transform: skew(-30deg, 14deg);
+}
+
+.finger.right 
+{
+   top: 2rem;
+   left: 12rem;
+   transform: rotate(147deg);
+}
