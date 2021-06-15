@@ -343,7 +343,7 @@ input:checked
 {
    position: absolute;
    z-index: 8;
-   height: 21.9%;
+   height: 21.8%;
    width: 83rem;
    bottom: 0rem;
    left: 47rem;
@@ -445,7 +445,7 @@ input:checked
    height: 545rem; 
    display: flex;
    position: absolute;
-   transform: scale(0.13);
+   transform: scale(0.15);
    left: -245rem;
    top: -228rem;
 }
