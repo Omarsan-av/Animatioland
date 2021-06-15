@@ -90,18 +90,18 @@ input:checked
 {
    position: absolute;
    z-index: 1;
-   height: 476rem;
-   width: 87rem;
+   height: 80%;
+   width: 83rem;
    bottom: 0;
-   right: 60rem;
+   right: 62rem;
 }
 
 .layer-1
 {
    position: absolute;
    z-index: 1;
-   height: 476rem;
-   width: 87rem;
+   height: 80.3%;
+   width: auto;
    bottom: 0;
    right: 60rem;
 
@@ -149,18 +149,18 @@ input:checked
 {
    position: absolute;
    z-index: 2;
-   height: 476rem;
-   width: 87rem;
+   height: 80%;
+   width: 83rem;
    bottom: 0;
-   left: 60rem;
+   left: 62rem;
 }
 
 .layer-2
 {
    position: absolute;
    z-index: 2;
-   height: 476rem;
-   width: 87rem;
+   height: 80.3%;
+   width: auto;
    bottom: 0;
    left: 60rem;
 
@@ -202,7 +202,8 @@ input:checked
    right: 0;
    margin: 0 auto;
    width: 75%;
-   height: 400rem;
+   /* height: 400rem; */
+   height: 70%;
    background: #c66645;
    bottom: 0;
    border-top-right-radius: 20rem;
@@ -214,23 +215,23 @@ input:checked
 {
    position: absolute;
    z-index: 4;
-   height: 356rem;
-   width: 87rem;
+   height: 57%;
+   width: 83rem;
    bottom: 0;
-   left: 60rem;
+   left: 62.4rem;
 }
 
 .layer-4
 {
    position: absolute;
    z-index: 4;
-   height: 356rem;
-   width: 87rem;
+   height: 57.3%;
+   width: auto;
    bottom: 0;
    left: 60rem;
 
    animation-name: jump4;
-   animation-duration: 1.7s;
+   animation-duration: 2s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -245,17 +246,17 @@ input:checked
 
    50% 
    {
-      transform: translateY(60rem);
+      transform: translateY(100rem);
    }
 
    75% 
    {
-      transform: translateY(20rem);
+      transform: translateY(50rem);
    } 
 
    100% 
    {
-      transform: translateY(60rem);
+      transform: translateY(0rem);
    }
 }
 
@@ -265,7 +266,8 @@ input:checked
    z-index: 5;
    left: 0;
    width: 65%;
-   height: 280rem;
+   /* height: 280rem; */
+   height: 47%;
    background: #c66645;
    bottom: 0;
    border-top-right-radius: 20rem;
@@ -277,18 +279,18 @@ input:checked
 {
    position: absolute;
    z-index: 6;
-   height: 236rem;
-   width: 87rem;
+   height: 40%;
+   width: 83rem;
    bottom: 0;
-   right: 37rem;
+   right: 39rem;
 }
 
 .layer-6
 {
    position: absolute;
    z-index: 6;
-   height: 236rem;
-   width: 87rem;
+   height: 40.3%;
+   width: auto;
    bottom: 0;
    right: 37rem;
 
@@ -329,7 +331,7 @@ input:checked
    right: 0;
    margin: 0 auto;
    width: 55%;
-   height: 160rem;
+   height: 30%;
    background: #c66645;
    bottom: 0;
    border-top-right-radius: 20rem;
@@ -341,23 +343,23 @@ input:checked
 {
    position: absolute;
    z-index: 8;
-   height: 126rem;
-   width: 87rem;
-   bottom: 10rem;
-   left: 45rem;
+   height: 22%;
+   width: 83rem;
+   bottom: 0rem;
+   left: 47rem;
 }
 
 .layer-8
 {
    position: absolute;
    z-index: 8;
-   height: 126rem;
-   width: 87rem;
-   bottom: 10rem;
+   height: 22.3%;
+   width: auto;
+   bottom: 0rem;
    left: 45rem;
 
    animation-name: jump8;
-   animation-duration: 1.5s;
+   animation-duration: 2.2s;
    animation-timing-function:ease-out;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -393,7 +395,7 @@ input:checked
    left: 0;
    margin: 0 auto;
    width: 60%;
-   height: 60rem;
+   height: 12%;
    background: #c66645;
    bottom: 0;
    border-top-right-radius: 20rem;
@@ -443,7 +445,7 @@ input:checked
    height: 545rem; 
    display: flex;
    position: absolute;
-   transform: scale(0.12);
+   transform: scale(0.13);
    left: -245rem;
    top: -228rem;
 }
@@ -709,9 +711,9 @@ input:checked
 
 .hand 
 {
-   width: 19.5rem;
-   height: 13rem;
-   top: 65rem;
+   width: 20rem;
+   height: 14rem;
+   top: 64rem;
    background: white;
    position: absolute;
    border-radius: 50%;
