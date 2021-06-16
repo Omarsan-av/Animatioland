@@ -90,10 +90,10 @@ input:checked
 {
    position: absolute;
    z-index: 1;
-   height: 79.9%;
-   width: 83rem;
+   height: 79.8%;
+   width: 96rem;
    bottom: 0;
-   right: 62rem;
+   right: 75rem;
 }
 
 .layer-1
@@ -103,7 +103,7 @@ input:checked
    height: 81%;
    width: auto;
    bottom: 0;
-   right: 60rem;
+   right: 80rem;
 
    animation-name: jump1;
    animation-duration: 1.8s;
@@ -149,10 +149,10 @@ input:checked
 {
    position: absolute;
    z-index: 2;
-   height: 79.9%;
-   width: 83rem;
+   height: 79.8%;
+   width: 96rem;
    bottom: 0;
-   left: 62rem;
+   left: 75rem;
 }
 
 .layer-2
@@ -162,7 +162,7 @@ input:checked
    height: 81%;
    width: auto;
    bottom: 0;
-   left: 60rem;
+   left: 80rem;
 
    animation-name: jump2;
    animation-duration: 2s;
@@ -215,10 +215,10 @@ input:checked
 {
    position: absolute;
    z-index: 4;
-   height: 56.9%;
-   width: 83rem;
+   height: 56.8%;
+   width: 96rem;
    bottom: 0;
-   left: 62.4rem;
+   left: 77rem;
 }
 
 .layer-4
@@ -228,7 +228,7 @@ input:checked
    height: 58%;
    width: auto;
    bottom: 0;
-   left: 60rem;
+   left: 81rem;
 
    animation-name: jump4;
    animation-duration: 1.5s;
@@ -279,10 +279,10 @@ input:checked
 {
    position: absolute;
    z-index: 6;
-   height: 39.9%;
-   width: 83rem;
+   height: 39.8%;
+   width: 96rem;
    bottom: 0;
-   right: 39rem;
+   right: 53rem;
 }
 
 .layer-6
@@ -292,7 +292,7 @@ input:checked
    height: 41%;
    width: auto;
    bottom: 0;
-   right: 37rem;
+   right: 58rem;
 
    animation-name: jump6;
    animation-duration: 1.8s;
@@ -344,9 +344,9 @@ input:checked
    position: absolute;
    z-index: 8;
    height: 21.8%;
-   width: 83rem;
+   width: 96rem;
    bottom: 0rem;
-   left: 47rem;
+   left: 64rem;
 }
 
 .layer-8
@@ -356,7 +356,7 @@ input:checked
    height: 23%;
    width: auto;
    bottom: 0rem;
-   left: 45rem;
+   left: 67.5rem;
 
    animation-name: jump8;
    animation-duration: 2.2s;
@@ -720,7 +720,6 @@ input:checked
    border-bottom-right-radius: 20%;
    border-bottom-left-radius: 20%;
    overflow: hidden;
-   z-index: 100;
 }
 
 .hand.left 
