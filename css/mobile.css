@@ -24,6 +24,25 @@ body
    background: linear-gradient(to left, #3498db, #dde8f3 95%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    overflow: hidden;
    box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
+   animation: shadowDay 50s ease 49s infinite;
+}
+
+@keyframes shadowDay
+{
+   0% 
+   {
+      background: -webkit-linear-gradient(to left, #3498db, #dde8f3 95%);  /* Chrome 10-25, Safari 5.1-6 */
+   }
+
+   70% 
+   {
+      background: linear-gradient(to left, #3498db, #ccd7e1 95%);
+   }
+
+   100% 
+   {
+      background: -webkit-linear-gradient(to left, #3498db, #dde8f3 95%);  /* Chrome 10-25, Safari 5.1-6 */
+   }
 }
 
 .sun 
@@ -41,13 +60,28 @@ body
 {
    width: 130rem;
    position: absolute;
-   right: 0;
+   /* right: 0; */
    top: 25rem;
+   animation: moveCloud 100s linear infinite;
+
 }
 
 .cloud img
 {
    width: 100%;
+}
+
+@keyframes moveCloud 
+{
+   0%
+   {
+      transform: translateX(100vw);
+   }  
+   
+   100%
+   {
+      transform: translateX(-50vw);
+   }
 }
 
 input[type=checkbox] 
