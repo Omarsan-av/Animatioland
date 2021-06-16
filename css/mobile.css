@@ -25,6 +25,7 @@ body
    overflow: hidden;
    box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
    animation: shadowDay 50s ease 49s infinite;
+   counter-reset: score;
 }
 
 @keyframes shadowDay
@@ -60,10 +61,8 @@ body
 {
    width: 130rem;
    position: absolute;
-   /* right: 0; */
-   top: 25rem;
+   top: 10rem;
    animation: moveCloud 100s linear infinite;
-
 }
 
 .cloud img
@@ -104,20 +103,21 @@ input[type=checkbox]:focus
 
 input:checked 
 {
-   counter-increment: game;
+   counter-increment: score;
 }
 
 .score 
 {
    position: absolute;
    letter-spacing: 2.5rem;
-   top: 65rem;
-   left: 110rem;
+   top: 80rem;
+   left: 38%;
+   font-size: 20rem;
 }
 
 .score:after 
 {
-   content: counter(game);
+   content: counter(score);
 }
 
 .hands-1
@@ -172,11 +172,6 @@ input:checked
    {
       transform: translateY(0);
    }
-}
-
-.layer-1 input[type=checkbox]
-{
-
 }
 
 .hands-2
