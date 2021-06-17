@@ -83,7 +83,7 @@ body
    }
 }
 
-input[type=checkbox] 
+/* input[type=checkbox] 
 {
    appearance: none;
    cursor: pointer;
@@ -104,21 +104,30 @@ input[type=checkbox]:focus
 input:checked 
 {
    counter-increment: score;
-}
+} */
 
 .score 
 {
    position: absolute;
    letter-spacing: 2.5rem;
    top: 80rem;
-   left: 38%;
+   left: 28%;
    font-size: 20rem;
 }
 
-.score:after 
+#score 
+{
+   position: absolute;
+   letter-spacing: 2.5rem;
+   top: 80rem;
+   left: 52%;
+   font-size: 20rem;
+}
+
+/* .score:after 
 {
    content: counter(score);
-}
+} */
 
 .hands-1
 {
@@ -137,7 +146,7 @@ input:checked
    height: 81%;
    width: auto;
    bottom: 0;
-   right: 80rem;
+   right: 167rem;
 
    animation-name: jump1;
    animation-duration: 1.8s;
@@ -321,7 +330,7 @@ input:checked
    height: 41%;
    width: auto;
    bottom: 0;
-   right: 58rem;
+   right: 144rem;
 
    animation-name: jump6;
    animation-duration: 1.8s;
