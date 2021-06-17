@@ -4,10 +4,15 @@ let puntuacion = 0;
 let ptsActuales = document.createTextNode(`${puntuacion} pts`);                                    
 score.appendChild(ptsActuales); 
 
-let conejos = document.querySelector(".rabbit");
+let conejos = document.querySelectorAll('.rabbit');
 
-conejos.addEventListener('click', () =>
+for (let i = 0; i < conejos.length; i++) 
 {
-   puntuacion +=  50;
-   score.innerHTML = puntuacion + ' pts' 
-})
+   conejos[i].addEventListener('click', () =>
+   {
+      puntuacion +=  50;
+      score.innerHTML = puntuacion + ' pts' ;
+   })
+ }
+
+
