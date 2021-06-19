@@ -149,7 +149,7 @@ input:checked
    right: 167rem;
 
    animation-name: jump1;
-   animation-duration: 1.8s;
+   animation-duration: 1.2s;
    animation-timing-function: ease-in-out;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -203,7 +203,7 @@ input:checked
    left: 80rem;
 
    animation-name: jump2;
-   animation-duration: 2s;
+   animation-duration: 1.5s;
    animation-timing-function: ease;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -269,7 +269,7 @@ input:checked
    left: 81rem;
 
    animation-name: jump4;
-   animation-duration: 1.5s;
+   animation-duration: 1s;
    animation-timing-function: linear;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -333,7 +333,7 @@ input:checked
    right: 144rem;
 
    animation-name: jump6;
-   animation-duration: 1.8s;
+   animation-duration: 1.5s;
    animation-timing-function: ease-in-out;
    animation-iteration-count: infinite;
    animation-direction: alternate;
@@ -397,7 +397,7 @@ input:checked
    left: 67.5rem;
 
    animation-name: jump8;
-   animation-duration: 2.2s;
+   animation-duration: 1.4s;
    animation-timing-function:ease-out;
    animation-iteration-count: infinite;
    animation-direction: alternate;
