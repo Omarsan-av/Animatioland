@@ -40,10 +40,10 @@ body
       background: linear-gradient(to left, #267fba, rgb(238, 205, 205) 95%);
    }
 
-   98.2% 
+   /* 98.2% 
    {
       background: linear-gradient(to left, #267fba, #b7cadb 95%);
-   }
+   } */
 } 
 
 .sun 
@@ -55,6 +55,7 @@ body
    position: absolute;
    left: -31rem;
    top: -8rem;
+   filter: drop-shadow(7px 5px 5px rgb(255, 255, 255));
 }
 
 .cloud 
