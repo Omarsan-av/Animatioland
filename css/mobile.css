@@ -37,7 +37,12 @@ body
 
    98% 
    {
-      background: linear-gradient(to left, #3498db, #b7cadb 95%);
+      background: linear-gradient(to left, #267fba, rgb(238, 205, 205) 95%);
+   }
+
+   98.2% 
+   {
+      background: linear-gradient(to left, #267fba, #b7cadb 95%);
    }
 } 
 
