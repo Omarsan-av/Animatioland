@@ -24,7 +24,7 @@ body
    background: linear-gradient(to left, #3498db, #dde8f3 95%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
    overflow: hidden;
    box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
-   animation: shadowDay 50s ease 49s infinite;
+   animation: shadowDay 60s ease-in infinite;
    counter-reset: score;
 }
 
@@ -35,16 +35,11 @@ body
       background: -webkit-linear-gradient(to left, #3498db, #dde8f3 95%);  /* Chrome 10-25, Safari 5.1-6 */
    }
 
-   70% 
+   98% 
    {
-      background: linear-gradient(to left, #3498db, #ccd7e1 95%);
+      background: linear-gradient(to left, #3498db, #b7cadb 95%);
    }
-
-   100% 
-   {
-      background: -webkit-linear-gradient(to left, #3498db, #dde8f3 95%);  /* Chrome 10-25, Safari 5.1-6 */
-   }
-}
+} 
 
 .sun 
 {
@@ -59,10 +54,10 @@ body
 
 .cloud 
 {
-   width: 130rem;
+   width: 115rem;
    position: absolute;
    top: 10rem;
-   animation: moveCloud 100s linear infinite;
+   animation: moveCloud 60s linear infinite;
 }
 
 .cloud img
@@ -79,32 +74,9 @@ body
    
    100%
    {
-      transform: translateX(-50vw);
+      transform: translateX(-130px);
    }
 }
-
-/* input[type=checkbox] 
-{
-   appearance: none;
-   cursor: pointer;
-   position: relative;
-   width: 80rem;
-   height: 130rem;
-   top: 0;
-   z-index: 2;
-
-}
-
-input[type=checkbox]:focus 
-{
-   appearance: none;
-   outline: none;    
-}
-
-input:checked 
-{
-   counter-increment: score;
-} */
 
 .score 
 {
@@ -123,11 +95,6 @@ input:checked
    left: 52%;
    font-size: 20rem;
 }
-
-/* .score:after 
-{
-   content: counter(score);
-} */
 
 .hands-1
 {
@@ -240,7 +207,6 @@ input:checked
    right: 0;
    margin: 0 auto;
    width: 75%;
-   /* height: 400rem; */
    height: 70%;
    background: #c66645;
    bottom: 0;
@@ -304,7 +270,6 @@ input:checked
    z-index: 5;
    left: 0;
    width: 65%;
-   /* height: 280rem; */
    height: 47%;
    background: #c66645;
    bottom: 0;
