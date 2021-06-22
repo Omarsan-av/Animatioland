@@ -56,13 +56,12 @@ body
 {
    width: 100px;
    height: 100px;
-   background: white;
+   background: #bdb5b5;
    border-radius: 50%;
    position: absolute;
    top: calc(50vh - 50px);
    left: calc(50vw - 50px);
    z-index: 10;
-   box-shadow: 0px 0px 10px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -70,21 +69,21 @@ body
    color: white;
    letter-spacing: 1px;
    /* transition: background ease 1s; */
-   border-color: #3498db;
-   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
-   -webkit-transition: all 150ms ease-in-out;
-   transition: all 150ms ease-in-out;
+   border-color: #16181d;
+   box-shadow: 0 0 40px 40px #16181d inset, 0 0 0 0 #16181d;
+   -webkit-transition:  150ms ease-in-out;
+   transition:  150ms ease-in-out;
 }
 
 .play:hover 
 {
-   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+   box-shadow: 0 0 10px 0 #16181d inset, 0 0 10px 4px #16181d;
    color: black;
 }
 
 .instruction 
 {
-   font-size: 25rem;
+   font-size: 22rem;
    left: 50rem;
    top: 40rem;
    position: absolute;
