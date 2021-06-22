@@ -10,7 +10,16 @@
       <link rel="stylesheet" href="css/styles_rabbit.css" media="(min-width:1024px)" >
    </head>
    <body>
-      <div class="phone">
+
+      <div class="instruction">
+         <p>Toca la cara de los conejos.</p>
+      </div>
+
+      <div class="play" id="play">
+         <p>Play</p>
+      </div>
+
+      <div class="phone" id="phone">
          <div class="sun"></div>
          <div class="cloud" id ="prueba">
             <img src="./nubes.png" alt="Nube">
@@ -306,8 +315,10 @@
 
          <div class="layer-9"></div>
       </div>
-      <h3 class="score">Score: </h3>
-      <h3 id="score"> </h3>
+      <div id="score-text">
+         <h3 class="score">Score: </h3>
+         <h3 id="score"> </h3>
+      </div>
    </body>
 
    <script src="js/rabbits.js"></script>

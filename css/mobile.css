@@ -26,6 +26,7 @@ body
    box-shadow: 0 19rem 38rem rgba(0, 0, 0, 0.30), 0 15rem 12rem rgba(0, 0, 0, 0.22);
    animation: shadowDay 60s ease-in infinite;
    counter-reset: score;
+   filter: blur(30px);
 }
 
 @keyframes shadowDay
@@ -37,14 +38,58 @@ body
 
    98% 
    {
-      background: linear-gradient(to left, #267fba, rgb(238, 205, 205) 95%);
+      background: linear-gradient(to left, #267fba, #eecdcd 95%);
    }
 
-   /* 98.2% 
+   99% 
    {
-      background: linear-gradient(to left, #267fba, #b7cadb 95%);
-   } */
+      background: -webkit-linear-gradient(to left, #3498db, #dde8f3 95%);  /* Chrome 10-25, Safari 5.1-6 */
+   } 
 } 
+
+#score-text 
+{
+   display: none;
+}
+
+.play
+{
+   width: 100px;
+   height: 100px;
+   background: white;
+   border-radius: 50%;
+   position: absolute;
+   top: calc(50vh - 50px);
+   left: calc(50vw - 50px);
+   z-index: 10;
+   box-shadow: 0px 0px 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 25rem;
+   color: white;
+   letter-spacing: 1px;
+   /* transition: background ease 1s; */
+   border-color: #3498db;
+   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+   -webkit-transition: all 150ms ease-in-out;
+   transition: all 150ms ease-in-out;
+}
+
+.play:hover 
+{
+   box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+   color: black;
+}
+
+.instruction 
+{
+   font-size: 25rem;
+   left: 50rem;
+   top: 40rem;
+   position: absolute;
+   z-index: 1;
+}
 
 .sun 
 {
