@@ -71,7 +71,7 @@ body
    color: #e6d2d2;
    letter-spacing: 1px;
    box-shadow:  #3b3838;
-   box-shadow: 0px 0px 10px 1px #3b3838;
+   box-shadow: 0px 0px 10px 1px #000;
 }
 
 .play:hover 
