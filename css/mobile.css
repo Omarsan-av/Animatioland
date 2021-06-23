@@ -153,7 +153,7 @@ body
    height: 79.8%;
    width: 96rem;
    bottom: 0;
-   right: 75rem;
+   right: 21%;
 }
 
 .layer-1
@@ -161,9 +161,9 @@ body
    position: absolute;
    z-index: 1;
    height: 81%;
-   width: auto;
+   width: 96px;
    bottom: 0;
-   right: 167rem;
+   right: 20.4%;
 
    animation-name: jump1;
    animation-duration: 1.4s;
@@ -207,7 +207,7 @@ body
    height: 79.8%;
    width: 96rem;
    bottom: 0;
-   left: 75rem;
+   left: 21%;
 }
 
 .layer-2
@@ -217,7 +217,7 @@ body
    height: 81%;
    width: auto;
    bottom: 0;
-   left: 80rem;
+   left: 22%;
 
    animation-name: jump2;
    animation-duration: 1.5s;
