@@ -33,8 +33,7 @@ body
    overflow: hidden;
    box-shadow: var(--shadowLayer);
    animation: shadowDay 60s ease-in infinite;
-   /* counter-reset: score; */
-   filter: blur(30px);
+   filter: blur(10px);
 }
 
 @keyframes shadowDay
