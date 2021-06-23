@@ -18,7 +18,7 @@ let evaluar;
 let ptsActuales = document.createTextNode(`${puntuacion} pts`);                                    
 score.appendChild(ptsActuales); 
 
-let conejos = document.querySelectorAll('.head');
+let conejos = document.querySelectorAll('.rabbit_head');
 
 for (let i = 0; i < conejos.length; i++) 
 {

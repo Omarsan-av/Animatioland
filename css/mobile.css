@@ -56,7 +56,7 @@ body
 {
    width: 100px;
    height: 100px;
-   background: #bdb5b5;
+   background: #db0000;
    border-radius: 50%;
    position: absolute;
    top: calc(50vh - 50px);
@@ -66,25 +66,22 @@ body
    justify-content: center;
    align-items: center;
    font-size: 25rem;
-   color: white;
+   color: #e6d2d2;
    letter-spacing: 1px;
-   /* transition: background ease 1s; */
-   border-color: #16181d;
-   box-shadow: 0 0 40px 40px #16181d inset, 0 0 0 0 #16181d;
-   -webkit-transition:  150ms ease-in-out;
-   transition:  150ms ease-in-out;
+   box-shadow:  #3b3838;
+   box-shadow: 0px 0px 10px 1px #3b3838;
 }
 
 .play:hover 
 {
-   box-shadow: 0 0 10px 0 #16181d inset, 0 0 10px 4px #16181d;
-   color: black;
+  background-color: #e6d2d2;
+  color: #db0000;
 }
 
 .instruction 
 {
    font-size: 22rem;
-   left: 50rem;
+   left: 60rem;
    top: 40rem;
    position: absolute;
    z-index: 1;
@@ -785,3 +782,4 @@ body
    left: 12rem;
    transform: rotate(147deg);
 }
+

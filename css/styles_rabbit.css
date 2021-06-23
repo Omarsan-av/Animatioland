@@ -1,25 +1,76 @@
-body 
-{
-   align-items: end;
-}
-
-.phone 
+.container 
 {
    width: 340px;
    height: 98vh;
    box-sizing: border-box;
    border-radius: 15px;
    border: 8px solid black;
+}
+
+.phone 
+{
+   width: 324px;
+   height: calc(98vh - 16px);
 } 
+
+.hands
+{
+   width: 78rem;
+}
+
+.hand 
+{
+   width: 20rem;
+}
 
 .hands-1, .hands-2
 {
    height: 81.8%;
 }
 
-.layer-1, .layer-2
+.layer-1
+{
+   right: 17%;
+   height: 82%;
+}
+
+.layer-2
 {
    height: 82%;
+   left: 19.5%;
+}
+
+.hands-4 
+{
+   height: 58.8%;
+}
+
+.layer-4
+{
+   height: 59%;
+   left: 72rem;
+}
+
+.hands-6
+{
+   height: 41.8%;
+}
+
+.layer-6
+{
+   height: 42%;
+   right: 136rem;
+}
+
+.hands-8
+{
+   height: 23.8%;
+}
+
+.layer-8
+{
+   height: 24%;
+   left: 59.5rem;
 }
 
 .rabbit 
@@ -27,4 +78,21 @@ body
    transform: scale(0.12);
 }
 
+@keyframes moveCloud 
+{
+   0%
+   {
+      transform: translateX(340px);
+   }  
+   
+   100%
+   {
+      transform: translateX(-130px);
+   }
+}
+
+.instruction 
+{
+   left: 41%;
+}
 
