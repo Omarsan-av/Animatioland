@@ -15,9 +15,7 @@ body
    width: 100%;
    display: grid;
    place-items: center;
-   background: #7d660e;  /* fallback for old browsers */
-   background: -webkit-linear-gradient(to left, #c24215, #7d660e);  /* Chrome 10-25, Safari 5.1-6 */
-   background: linear-gradient(to left, #c24215, #7d660e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   background-image: radial-gradient(circle at 50% 50%, #000000 0%, #005cab 46%, #3ecd8a 100%);
 }
 
 .phone
