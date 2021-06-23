@@ -1,8 +1,30 @@
-/* .phone 
+body 
 {
-   border: 8rem solid black;
-   border-radius: 40rem;
-   height: 600rem;
-   width: 300rem;
-} */
+   align-items: end;
+}
+
+.phone 
+{
+   width: 340px;
+   height: 98vh;
+   box-sizing: border-box;
+   border-radius: 15px;
+   border: 8px solid black;
+} 
+
+.hands-1, .hands-2
+{
+   height: 81.8%;
+}
+
+.layer-1, .layer-2
+{
+   height: 82%;
+}
+
+.rabbit 
+{
+   transform: scale(0.12);
+}
+
 
