@@ -13,6 +13,16 @@
    height: calc(98vh - 16px);
 } 
 
+.rabbit_background 
+{
+   display: block;
+   position: absolute;
+   right: 0px;
+   bottom: -5px;
+   height: 400px;
+   z-index: -1;
+}
+
 .hands
 {
    width: 78rem;
