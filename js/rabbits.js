@@ -27,34 +27,5 @@ for (let i = 0; i < conejos.length; i++)
       puntuacion +=  50;
       score.innerHTML = puntuacion + ' pts' ;
    })
- }
-
-let layer = document.querySelectorAll('.layer-3, .layer-5, .layer-7, .layer-9');
-
-for (let j = 0; j < layer.length; j++) 
-{
-   layer[j].addEventListener('click', () =>
-   {
-      puntuacion =  0;
-      score.innerHTML = puntuacion + ' pts' ;
-   })
 }
-
-let hand = document.querySelectorAll('.hand.left, .hand.right');
-
-for (let k = 0; k < hand.length; k++) 
-{
-   hand[k].addEventListener('click', () =>
-   {
-      puntuacion =  0;
-      score.innerHTML = puntuacion + ' pts' ;
-   })
-}
-
-
-
-
-
- 
-
 
