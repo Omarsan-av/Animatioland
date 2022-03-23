@@ -1,11 +1,11 @@
 let play = document.getElementById('play');
-let phone = document.getElementById('phone');
+let wrap = document.getElementById('wrap');
 let scoreText = document.getElementById('score-text');
 let instruction = document.querySelector('.instruction');
 
 play.addEventListener('click', () =>
 {
-   phone.style.filter = 'none';
+   wrap.style.filter = 'none';
    play.style.display = 'none';
    scoreText.style.display = 'block';
    instruction.style.display = 'none';
